@@ -13,7 +13,6 @@
 *.o
 *.o.*
 *.a
-*.s
 *.ko
 *.so
 *.so.dbg
@@ -96,3 +95,12 @@ x509.genkey
 
 # Kconfig presets
 all.config
+
+# linux-0.01-rm
+*.map
+Image
+boot/boot
+tools/build
+tools/system
+
+tmp/
