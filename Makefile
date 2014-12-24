@@ -95,3 +95,6 @@ init/main.o : init/main.c include/unistd.h include/sys/stat.h \
   include/linux/sched.h include/linux/head.h include/linux/fs.h \
   include/linux/mm.h include/asm/system.h include/asm/io.h include/stddef.h \
   include/stdarg.h include/fcntl.h 
+
+run: Image
+	qemu -hdb ../hd_oldlinux.img -fda $< -boot order=ac
